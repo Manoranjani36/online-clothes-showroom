@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Women Collection</title>
+
+ <style>
+   body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+   }
+ </style>
+</head>
+
+<body>
+
+<h2>Women collection</h2>
+<img src="women1.jpg">
+<p>Lehanga</p>
+<p>Rs.899</p>
+
+<select id="size1">
+  <option>S</option>
+  <option>M</option>
+  <option>L</option>
+</select>
+
+<button onclick="addToCart(&quot;Women's lehanga&quot;,899,'size1')">
+  Add to Cart
+</button>
+
+
+<h2>Women collection</h2>
+<img src="women2.jpg">
+<p>Lehanga</p>
+<p>Rs.899</p>
+
+<select id="size2">
+  <option>S</option>
+  <option>M</option>
+  <option>L</option>
+</select>
+
+<button onclick="addToCart(&quot;Women's lehanga&quot;,899,'size2')">
+  Add to Cart
+</button>
+
+
+<h2>Women collection</h2>
+<img src="women3.jpg">
+<p>Lehanga</p>
+<p>Rs.899</p>
+
+<select id="size3">
+  <option>S</option>
+  <option>M</option>
+  <option>L</option>
+</select>
+
+<button onclick="addToCart(&quot;Women's lehanga&quot;,899,'size3')">
+  Add to Cart
+</button>
+
+
+<script>
+function addToCart(name, price, sizeId) {
+  let size = document.getElementById(sizeId).value;
+  alert(name + " (" + size + ") added to cart!");
+}
+</script>
+
+</body>
+</html>
